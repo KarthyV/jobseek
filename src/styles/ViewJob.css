@@ -1,0 +1,50 @@
+.view-card-container {
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 15px 0;
+  padding: 10px;
+}
+
+.view-container-logo {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.view-job-meta {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.view-job-meta-header {
+  display: flex;
+  gap: 10px;
+}
+
+.view-job-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.view-job-tags-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+@media (max-width: 580px) {
+  .view-job-tags-container {
+    width: 100%;
+  }
+}
+.view-job-contact {
+  display: flex;
+  justify-content: center;
+}

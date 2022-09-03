@@ -1,0 +1,97 @@
+.list-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin: 25px 0;
+}
+
+@media (max-width: 770px) {
+  .list-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.job-card-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.job-card-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.job-position {
+  font-weight: 560;
+}
+.job-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding-top: 7px;
+}
+
+.job-card-right-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.job-tags {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.each-tags {
+  background-color: #dbedf2;
+  color: #3b7889;
+  padding: 5px 7px;
+  border-radius: 3px;
+  width: fit-content;
+}
+
+.company-tags {
+  font-size: 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 3px 2px;
+  height: fit-content;
+}
+
+.job-meta {
+  opacity: 0.65;
+  font-weight: bold;
+}
+
+.recruiter-action {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}

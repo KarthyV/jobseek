@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: rgb(218, 246, 237);
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.form-container {
+  margin-top: 10%;
 }
