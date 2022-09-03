@@ -61,7 +61,7 @@ const SearchJob = () => {
         </div>
       </div>
       {query && loading && <div>Searching for Jobs that match</div>}
-      {query && (
+      {query && !loading && (
         <div>
           {searchResults.length > 0 ? (
             searchResults.map((job) => <JobCardList key={job._id} job={job} />)
