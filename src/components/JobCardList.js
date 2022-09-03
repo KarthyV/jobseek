@@ -19,9 +19,10 @@ const JobCardList = ({ job, recruiter, toDelete }) => {
         <div className="job-card-right-details">
           <div className="job-about">
             <h6>{job.companyName}</h6>
-            {moment(job.postedAt).fromNow().includes("hours") && (
-              <span className="company-tags">New</span>
-            )}
+            {moment(job.postedAt).fromNow().includes("hours") ||
+              (moment(job.postedAt).fromNow().includes("minutes") && (
+                <span className="company-tags">New</span>
+              ))}
             {job.featured && <span className="company-tags">Featured</span>}
           </div>
           <div className="job-position">
