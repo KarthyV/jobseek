@@ -45,6 +45,7 @@ const SearchJob = () => {
           />
         </div>
         <div className="language-tag-container">
+          Featured Tags :
           <span
             onClick={(e) => setQuery(e.target.textContent)}
             className="language-tag"
