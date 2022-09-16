@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../styles/SearchJob.css";
 import axios from "../api";
@@ -8,6 +8,7 @@ const SearchJob = () => {
   const [query, setQuery] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
+  const searchRef = useRef();
 
   useEffect(() => {
     if (query) {
@@ -23,10 +24,26 @@ const SearchJob = () => {
     }
   }, [query]);
 
+  const handleSearch = (e) => {
+    if (e.key === "Enter") {
+      const enteredValue = searchRef.current.value;
+      setQuery(enteredValue);
+    }
+  };
+
   return (
     <Container>
       <div className="filter-container">
-        <h3>Filter By Languages</h3>
+        <h3>Search By Languages</h3>
+        <div className="search-box-container">
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            placeholder="Search by language"
+            ref={searchRef}
+            onKeyDown={handleSearch}
+          />
+        </div>
         <div className="language-tag-container">
           <span
             onClick={(e) => setQuery(e.target.textContent)}

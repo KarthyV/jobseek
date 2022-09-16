@@ -20,7 +20,7 @@ const Jobs = () => {
       axios
         .get("/jobs")
         .then((response) => {
-          setJobs(response.data);
+          setJobs(response.data.reverse());
           setLoading(false);
         })
         .catch((err) => console.log(err));

@@ -19,3 +19,26 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+
+.search-box-container > input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.search-box-container > i {
+  margin-left: 10px;
+}
+
+.search-box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  gap: 5px;
+  background: #fff;
+  border-radius: 10px;
+}
